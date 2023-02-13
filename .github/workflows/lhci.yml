@@ -1,16 +1,16 @@
-name: Lighthose CI
+name: Lighthouse CI
 on: [push]
 jobs:
   lhci:
     name: Lighthouse CI
-    runs-on: ubunti-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js 14
         uses: actions/setup-node@v3
         with:
           node-version: 14
-      - name: Install dependecies
+      - name: Install dependencies
         run: npm install
       - name: run Lighthouse CI
         run: |
