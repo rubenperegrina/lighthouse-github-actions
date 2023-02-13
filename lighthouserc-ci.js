@@ -1,7 +1,8 @@
 module.exports = {
     ci: {
         collect: {
-            startServerCommand: 'npm run start',
+            startServerCommand: 'npm run build',
+            isSinglePageApplication: true,
             numberOfRuns: 3,
             url: [
                 'http://localhost:4200/users',
